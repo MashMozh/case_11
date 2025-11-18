@@ -29,20 +29,20 @@ def main() -> None:
     sets up the turtle, and draws the fractal.
     """
 
-    speed(0)
+    speed()
     bgcolor("black")
     color("cyan")
 
-    n = int(input("Введите порядок фрактала: "))
-    a = int(input("Введите длину начальной линии: "))
-    ang = int(input("Введите угол ветвления (например, 30-60): "))
+    depth = int(input("Введите порядок фрактала: "))
+    lenth = int(input("Введите длину начальной линии: "))
+    angle = int(input("Введите угол ветвления (например, 30-60): "))
 
     penup()
     setpos(0, -a // 2)
     pendown()
     setheading(90)
 
-    spiral_branch(n, a, ang)
+    spiral_branch(depth, lenth, angle)
     done()
 
 
